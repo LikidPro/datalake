@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diagrama de Procesos</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/3x0RYPyq/cropped-favicon-192x192.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <h1>Gedop flujo</h1>
+</header>
+
+<body>
+    <div class="bodydiv">
+        <div class="diagram">
+            <button id="1" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-landing_to_raw_inc_load_with_cdc_with_updates-job-1A/runs">CDC
+                    job-1A</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="2" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-landing_to_raw_inc_load_with_cdc_with_updates-job-1B/runs">CDC
+                    job-1B</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="3" type="button" class="block blue">
+
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-landing_to_raw_inc_load_with_cdc_with_updates-job-1C/runs">CDC
+                    job-1C</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="4" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-landing_to_raw_inc_load_with_cdc_with_updates-job-1D/runs">CDC
+                    job-1D</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="5" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-landing_to_raw_inc_load_with_cdc_with_updates-job-1E/runs">CDC
+                    job-1E</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="6" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1B/runs">Inc
+                    job-1B</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="27" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1C/runs">Inc
+                    job-1C</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="7" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1D/runs">Inc
+                    job-1D</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="8" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1E/runs">Inc
+                    job-1E</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="9" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1F/runs">Inc
+                    job-1F</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="10" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1G/runs">Inc
+                    job-1G</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="11" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1H/runs">Inc
+                    job-1H</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="12" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_full_load_with_pagination_without_updates-job-1B/runs">Full
+                    load job-1B</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="13" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_inc_load_with_pagination_with_updates-job-1J/runs">Inc
+                    job-1j</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="14" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_full_load_with_pagination_without_updates-job-1D/runs">Full
+                    load job-1D</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+            <button id="15" type="button" class="block blue">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_to_raw_full_load_with_updates-job-1/runs">Full
+                    load job-1</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset">Not Set</option>
+                </select>
+            </button>
+        </div>
+        <div class="diagram">
+            <button id="21" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-custodia-apis-padroncuentatipo-raw-to-dynamodb-pipeline">padron
+                    cuenta Tipo</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="20" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-custodia-apis-movimientos-raw-to-dynamodb-pipeline">movimientos</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="16" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_raw_views_csv_interbalances-job/runs">csv
+                    int.balances</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="18" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_raw_views_csv_holdings-job/runs">csvholdins</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="19" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_raw_views_csv_balances-job/runs">csvbalances</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="24" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-sap-raw-to-fileserver-daily-pipeline">sap
+                    daily</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="23" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-custodia-apis-subcuentainversor-raw-to-dynamodb-pipeline">subcuenta
+                    inversor</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="25" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-avisonuevosmovimientos-raw-to-fileserver-daily-pipeline">
+                    nuevos movimientos</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select> </button>
+        </div>
+        <div class="diagram">
+    
+            <button id="22" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-custodia-apis-saldos-raw-to-dynamodb-pipeline">saldos</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="26" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-reports-files-raw-to-fileserver-daily-pipeline">pedin</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+        </div>
+        <div class="diagram">
+            <button id="29" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_raw_views_csv_interholdings-job/runs">Int.Holdings</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="30" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/gluestudio/home?region=eu-west-1#/editor/job/byma-dl-nasdaq_cdc_landing_cleaner-job/runs">Cleaner
+                    CDC</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+            <button id="31" type="button" class="block noset">
+                <a target="_blank"
+                    href="https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/prd-byma-datalake-cdk-gedop-and-tables-status2?tab=code">Gedop
+                    count</a>
+                <select class="state-select" onchange="cambioDeEstado(this)">
+                    <option value="blue">OK</option>
+                    <option value="faild">Failed</option>
+                    <option value="progress">In Progress</option>
+                    <option value="noset" selected>Not Set</option>
+                </select>
+            </button>
+        </div>
+    </div>
+    <button id="28" type="button" class="block noset pedin">
+        <a target="_blank"
+            href="https://eu-west-1.console.aws.amazon.com/states/home?region=eu-west-1#/statemachines/view/arn%3Aaws%3Astates%3Aeu-west-1%3A207670804371%3AstateMachine%3Abyma-dl-nasdaq-mirror-pedin-critical-pipeline?type=est%C3%A1ndar">Ruta
+            Critica Pedin</a>
+        <select class="state-select" onchange="cambioDeEstado(this)">
+            <option value="blue">OK</option>
+            <option value="faild">Failed</option>
+            <option value="progress">In Progress</option>
+            <option value="noset" selected>Not Set</option>
+        </select> </button>
+</body>
+<style>
+    body {
+        background-color: #0E2C48;
+        margin: 0;
+        /* Asegúrate de tener el enlace de Google Fonts en el <head> */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .pedin {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    .bodydiv {
+        margin-top: 5px;
+        height: fit-content;
+        margin-top: 4px;
+        padding-top: 5rem;
+        height: 80vh;
+        background-color: white;
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: -8px 15px 0px 20px rgba(0, 0, 0, 0.2);
+        
+     /*    background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='25.7' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(180 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23000' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23000104' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23010207' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%2301030b' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%2301050e' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23020612' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23020716' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23020819' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%2303091d' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23030a20' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23030b24' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23040c28' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23040e2b' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23040f2f' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23051032' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23051136' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed; */
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        
+
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 100%;
+        background-color: #0E2C48;
+        background-image: url('https://auta.org.ar/data/img_cont/img_imagenes/img_gr/599_1071.jpg');
+        background-size: 35%;
+        background-repeat: no-repeat;
+   
+
+    }
+
+    h1 {
+        color: white;
+        align-self: flex-end;
+        font-size: 4rem;
+       /*  text-shadow: white 1px 1px 3px ; */
+
+    }
+
+    a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .diagram {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        width: 95px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 6px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 2px white;
+    }
+
+    .state-select {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .blue {
+        background-color: rgb(10, 235, 10);
+    
+    }
+
+    .blueBorder {
+        /* border: solid 3px rgb(10, 235, 10); */
+        box-shadow: 3px 3px 3px rgb(10, 235, 10);
+    }
+
+    .faild {
+        background-color: rgb(235, 10, 10);
+    }
+
+    .faildBorder {
+        /* border: solid 3px rgb(235, 10, 10); */
+        box-shadow: 3px 3px 3px rgb(235, 10, 10);
+    }
+
+    .progress {
+        background-color: #0188E9;
+    }
+
+    .noset {
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+<script>
+    let boton1 = 'blue'
+    let boton2 = 'blue'
+    let boton3 = 'blue'
+    let boton4 = 'blue'
+    let boton5 = 'blue'
+    let boton6 = 'blue'
+    let boton27 = 'blue'
+    let boton7 = 'blue'
+    let boton8 = 'blue'
+    let boton9 = 'blue'
+    let boton10 = 'blue'
+    let boton11 = 'blue'
+    let boton12 = 'blue'
+    let boton13 = 'blue'
+    let boton14 = 'blue'
+    let boton15 = 'blue'
+    let boton16 = 'noset'
+    let boton18 = 'noset'
+    let boton19 = 'noset'
+    let boton20 = 'noset'
+    let boton21 = 'noset'
+    let boton22 = 'noset'
+    let boton23 = 'noset'
+    let boton24 = 'noset'
+    let boton25 = 'noset'
+    let boton26 = 'noset'
+    function cambioDeEstado(selectElement) {
+        let button = selectElement.closest('button');
+        let buttonid = button.id
+        let colorClass = selectElement.value;
+        console.log(buttonid)
+        if (buttonid == 5) {
+            boton5 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = [ '19', '20', '25'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 7) {
+            boton7 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = [ '20', '23', '25','26'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 8) {
+            boton8 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = [ '23', '25'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 9) {
+            boton9 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = [ '18', '20', '25'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 10) {
+            boton10 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = [ '21', '20', '23'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+
+
+        if (buttonid == 2) {
+            boton2 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['16', '19'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 12) {
+            boton12 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['16', '19', '18', '21', '23'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 6) {
+            boton6 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['20', '25','24'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 4) {
+            boton6 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['21'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 27) {
+            boton27 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['21', '23', '25'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 18) {
+            boton18 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['22', '26'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 19) {
+            boton19 = colorClass
+            if (colorClass != 'blue') {
+                let idsToFind = ['22', '26'];
+                idsToFind.forEach(id => {
+                    let btn = document.getElementById(id);
+                    if (btn) {
+                        btn.classList.add('faildBorder');
+
+                    }
+                });
+            }
+        }
+        if (buttonid == 1) {
+            boton1 = colorClass
+        }
+        if (buttonid == 3) {
+            boton3 = colorClass
+        }
+        if (buttonid == 11) {
+            boton11 = colorClass
+        }
+        if (buttonid == 16) {
+            boton16 = colorClass
+        }
+        if (buttonid == 20) {
+            boton20 = colorClass
+        }
+        if (buttonid == 21) {
+            boton21 = colorClass
+        }
+        if (buttonid == 22) {
+            boton22 = colorClass
+        }
+        if (buttonid == 23) {
+            boton23 = colorClass
+        }
+        if (buttonid == 24) {
+            boton24 = colorClass
+        }
+        if (buttonid == 25) {
+            boton25 = colorClass
+        }
+        if (buttonid == 26) {
+            boton26 = colorClass
+        }
+        if (buttonid == 28) {
+            if (colorClass == 'blue') {
+                boton18 = 'blue'
+                boton19 = 'blue'
+                boton26 = 'blue'
+                let button18 = document.getElementById('18')
+                let button19 = document.getElementById('19')
+                let button26 = document.getElementById('26')
+                button18.classList.remove('blue', 'faild', 'progress', 'noset');
+                button18.classList.add(colorClass);
+                button19.classList.remove('blue', 'faild', 'progress', 'noset');
+                button19.classList.add(colorClass);
+                button26.classList.remove('blue', 'faild', 'progress', 'noset');
+                button26.classList.add(colorClass);
+                let select18 = button18.querySelector('.state-select');
+                if (select18.value !== 'blue') {
+                    select18.value = 'blue';
+                }
+                let select19 = button19.querySelector('.state-select');
+                if (select19.value !== 'blue') {
+                    select19.value = 'blue';
+                }
+                let select26 = button26.querySelector('.state-select');
+                if (select26.value !== 'blue') {
+                    select26.value = 'blue';
+                }
+            } else {
+                boton18 = colorClass
+                boton19 = colorClass
+                boton26 = colorClass
+                let button18 = document.getElementById('18')
+                let button19 = document.getElementById('19')
+                let button26 = document.getElementById('26')
+                button18.classList.remove('blue', 'faild', 'progress', 'noset');
+                button18.classList.add(colorClass);
+                button19.classList.remove('blue', 'faild', 'progress', 'noset');
+                button19.classList.add(colorClass);
+                button26.classList.remove('blue', 'faild', 'progress', 'noset');
+                button26.classList.add(colorClass);
+                let select18 = button18.querySelector('.state-select');
+                if (select18.value !== colorClass) {
+                    select18.value = colorClass;
+                }
+                let select19 = button19.querySelector('.state-select');
+                if (select19.value !== colorClass) {
+                    select19.value = colorClass;
+                }
+                let select26 = button26.querySelector('.state-select');
+                if (select26.value !== colorClass) {
+                    select26.value = colorClass;
+                }
+            }
+
+        }
+        comprobarEstados()
+       
+
+        button.classList.remove('blue', 'faild', 'progress', 'noset');
+        button.classList.add(colorClass);
+    }
+    function comprobarEstados(){
+
+if (boton6 =='blue' && boton5 == 'blue' && boton7 == 'blue' && boton8 == 'blue' && boton9 == 'blue' && boton10 == 'blue' && boton13 == 'blue' && boton14 == 'blue' && boton15 == 'blue') {
+
+    let btn = document.getElementById('24');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+} else {
+    let btn = document.getElementById('24');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton2 == 'blue' && boton12 == 'blue') {
+
+    let btn = document.getElementById('16');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+}
+else {
+    let btn = document.getElementById('16');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton2 == 'blue' && boton12 == 'blue' && boton5 == 'blue') {
+
+    let btn = document.getElementById('19');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+}
+else {
+    let btn = document.getElementById('19');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton1 == 'blue' && boton9 == 'blue' && boton12 == 'blue') {
+
+    let btn = document.getElementById('18');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+}
+else {
+    let btn = document.getElementById('18');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton5 == 'blue' && boton6 == 'blue' && boton7 == 'blue' && boton9 == 'blue' && boton10 == 'blue') {
+
+    let btn = document.getElementById('20');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+}
+else {
+    let btn = document.getElementById('20');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton4 == 'blue' && boton12 == 'blue' && boton27 == 'blue' && boton10 == 'blue') {
+
+    let btn = document.getElementById('21');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+}
+else {
+    let btn = document.getElementById('21');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton18 == 'blue' && boton19 == 'blue' && boton10 == 'blue' && boton7 == 'blue') {
+    let btn = document.getElementById('22');
+    let btn2 = document.getElementById('26');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+    if (btn2) {
+        btn2.classList.remove('faildBorder');
+        btn2.classList.add('blueBorder');
+    }
+} else {
+    let btn = document.getElementById('22');
+    let btn2 = document.getElementById('26');
+    let btn3 = document.getElementById('28');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+    if (btn2) {
+        btn2.classList.remove('blueBorder');
+        btn2.classList.add('faildBorder');
+    }
+ 
+}
+if (boton1 == 'blue' && boton2 == 'blue' && boton5 == 'blue'&& boton7 == 'blue'&& boton9 == 'blue'&& boton10 == 'blue'&& boton12 == 'blue') {
+    let btn = document.getElementById('28');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }}
+    else {
+
+    let btn = document.getElementById('28');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+
+if (boton27 == 'blue' && boton7 == 'blue' && boton8 == 'blue' && boton10 == 'blue' && boton11 == 'blue' && boton12 == 'blue') {
+    let btn = document.getElementById('23');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+} else {
+    let btn = document.getElementById('23');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+
+if (boton5 == 'blue' && boton27 == 'blue' && boton6 == 'blue' && boton7 == 'blue' && boton8 == 'blue' && boton9 == 'blue') {
+    let btn = document.getElementById('25');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+    }
+} else {
+    let btn = document.getElementById('25');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+}
+if (boton1 === 'blue' &&
+    boton2 === 'blue' &&
+    boton3 === 'blue' &&
+    boton4 === 'blue' &&
+    boton5 === 'blue' &&
+    boton6 === 'blue' &&
+    boton7 === 'blue' &&
+    boton8 === 'blue' &&
+    boton9 === 'blue' &&
+    boton10 === 'blue' &&
+    boton11 === 'blue' &&
+    boton12 === 'blue' &&
+    boton13 === 'blue' &&
+    boton14 === 'blue' &&
+    boton15 === 'blue' &&
+    boton16 === 'blue' &&
+    boton18 === 'blue' &&
+    boton19 === 'blue' &&
+    boton20 === 'blue' &&
+    boton21 === 'blue' &&
+    boton22 === 'blue' &&
+    boton23 === 'blue' &&
+    boton24 === 'blue' &&
+    boton25 === 'blue' &&
+    boton26 === 'blue') {
+    let btn = document.getElementById('29');
+    let btn2 = document.getElementById('30');
+    let btn3 = document.getElementById('31');
+    if (btn) {
+        btn.classList.remove('faildBorder');
+        btn.classList.add('blueBorder');
+
+    }
+    if (btn2) {
+        btn2.classList.remove('faildBorder');
+        btn2.classList.add('blueBorder');
+
+    }
+    if (btn3) {
+        btn3.classList.remove('faildBorder');
+        btn3.classList.add('blueBorder');
+
+    }
+} else {
+    let btn = document.getElementById('29');
+    let btn2 = document.getElementById('30');
+    let btn3 = document.getElementById('31');
+    if (btn) {
+        btn.classList.remove('blueBorder');
+        btn.classList.add('faildBorder');
+    }
+    if (btn2) {
+        btn2.classList.remove('blueBorder');
+        btn2.classList.add('faildBorder');
+    }
+    if (btn3) {
+        btn3.classList.remove('blueBorder');
+        btn3.classList.add('faildBorder');
+    }
+}
+}
+comprobarEstados()
+</script>
+
+</html>
